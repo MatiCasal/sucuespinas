@@ -82,5 +82,5 @@
 
 .login__button button:active {
   background-color: rgb(167, 197, 178);
-  transition: all 0.2s ease;
+  transition: all 0.08s ease;
 }

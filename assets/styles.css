@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --background: white;
+  --navcolor: linear-gradient(to bottom, #8e9eab, #eef2f3);
+  --product_color-bg: #e9ecef;
+  --product_color-card: #c3b7ae;
+  --text: black;
+  --input_bg: #dee2e6;
+  --input_focus: #eaf4f4;
+  --input_active: rgb(167, 197, 178);
+  --footer: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +25,7 @@ header {
   justify-content: space-between;
   align-items: center;
   /* background: linear-gradient(to bottom, #abbaab, #ffffff); */
-  background: linear-gradient(to bottom, #8e9eab, #eef2f3);
+  background: var(--navcolor);
 }
 
 body {
@@ -59,7 +71,7 @@ body {
 .navbar__list > li > a {
   display: block;
   padding: 0px;
-  color: black;
+  color: var(--text);
   font-weight: 500;
   text-decoration: none;
 }
@@ -103,11 +115,12 @@ body {
 .hero-subtitle {
   font-size: 1.5rem;
   font-weight: 500;
+  padding: 20px;
 }
 
 #nosotros {
   height: 80vh;
-  background-color: white;
+  background-color: var(--background);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-around;
@@ -118,10 +131,8 @@ body {
   max-width: 40vw;
   max-height: 60vh;
   font-size: 1.5rem;
-  /* background-color: rebeccapurple; */
   position: relative;
   left: 15px;
-  /* box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.9); */
 }
 
 .nosotros__img {
@@ -131,15 +142,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: violet; */
 }
 
 .nosotros__img img {
   max-width: 60vw;
   max-height: 55vh;
-
-  /* box-shadow: 2px, 2px, 2px, 1px rgba(0, 0, 0, 0); */
-  /* background-color: #cce3de; */
 }
 
 .nosotros__text span {
@@ -157,13 +164,8 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  background-color: #e9ecef;
+  background-color: var(--product_color-bg);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-  /* box-shadow: 0px 6px 5px rgba(27, 27, 27, 0.3); */
-
-  /* background-color: aqua; */
-  /* align-items: center; */
-  /* align-content: center; */
 }
 
 #productos h2 {
@@ -172,7 +174,9 @@ body {
   align-items: center;
   margin: 2rem;
   padding: 1rem;
-  /* background-color: blue; */
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-decoration: underline;
 }
 
 .productos__cont {
@@ -184,27 +188,25 @@ body {
   padding: 20px 0;
   width: 70vw;
   margin: 0 auto;
-  /* background-color: lightcoral; */
 }
 
 .productos__card {
   width: 18vw;
   height: 55vh;
-  background-color: #c3b7ae;
+  background-color: var(--product_color-card);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 2rem;
-  /* background-color: red; */
 }
 
 .productos__card img {
   width: 16vw;
   height: 42vh;
   border-radius: 8%;
-  /* box-shadow: 2px, 2px, 2px, 1px rgba(0, 0, 0, 0.8); */
+  cursor: pointer;
 }
 
 .articulos__cont {
@@ -216,26 +218,25 @@ body {
   padding: 20px 0;
   width: 70vw;
   margin: 0 auto;
-  /* background-color: lightcoral; */
 }
 
 .articulos__card {
   width: 20vw;
   height: 55vh;
-  background-color: #c3b7ae;
+  background-color: var(--product_color-card);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 2rem;
-  /* background-color: red; */
 }
 
 .articulos__card img {
   width: 18vw;
   height: 40vh;
   border-radius: 8%;
+  cursor: pointer;
 }
 
 .productos__card--text {
@@ -247,17 +248,21 @@ body {
 }
 
 #productos h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 25px;
   margin: 10px;
+  /* background-color: yellow; */
+  width: 20vw;
+  position: relative;
+  left: 80px;
+  text-decoration: underline;
 }
 
 /* <!-- SECCION CONTACTO -- >  */
 
 #contacto {
   width: 100%;
-  /* height: 25rem; */
   margin-top: 5px;
   padding: 5px;
   display: flex;
@@ -265,7 +270,7 @@ body {
   justify-content: center;
   align-items: top;
   /* background-color: #d4e8e4; */
-  background-color: white;
+  background-color: var(--background);
 }
 
 .contacto__title {
@@ -278,7 +283,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: lightblue; */
 }
 
 .contacto__title h2 {
@@ -292,8 +296,6 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /* background-color: yellow; */
-  /* width: 80vw; */
   height: 70vh;
 }
 
@@ -302,7 +304,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  /* background-color: red; */
 }
 
 .contacto__form--datos span {
@@ -312,7 +313,7 @@ body {
 }
 
 .contacto__form--datos input {
-  background-color: #dee2e6;
+  background-color: var(--input_bg);
   width: 370px;
   height: 37px;
   border-radius: 10px;
@@ -328,11 +329,12 @@ body {
 }
 
 .contacto__form--datos textarea {
-  background-color: #dee2e6;
+  background-color: var(--input_bg);
   width: 370px;
   height: 80px;
   border-radius: 10px;
   padding: 5px;
+  border: solid 2px;
 }
 
 .boton {
@@ -342,13 +344,12 @@ body {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  background-color: #dee2e6;
+  background-color: var(--input_bg);
 }
 
 .boton button {
   background: none;
   border: none;
-  /* text-align: center; */
   cursor: pointer;
   justify-content: center;
   align-items: center;
@@ -356,21 +357,18 @@ body {
 }
 
 .boton:active {
-  background-color: rgb(167, 197, 178);
+  background-color: var(--input_active);
   transition: all 0.2s ease;
 }
 
 .enviar p {
-  /* text-align: center; */
   padding: 4px 12px;
-  /* background-color: yellow; */
 }
 
 .redes {
   width: 100%;
   height: 20vh;
   margin-top: 30px;
-  /* background-color: orange; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -378,18 +376,17 @@ body {
 }
 
 .redes__parrafo {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
+  text-decoration: underline;
   box-shadow: 2px, 2px, 2px, 1px rgba(0, 0, 0, 0.8);
   margin: 10px;
   padding: 10px;
-  /* background-color: #8e9eab; */
 }
 
 .logos__redes {
   width: 20vw;
   height: 10vh;
-  /* background-color: #bac7be; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -399,7 +396,6 @@ body {
   max-width: 50px;
   max-height: 50px;
   display: flex;
-  /* background-color: whitesmoke; */
 }
 
 /* SECCION FOOTER */
