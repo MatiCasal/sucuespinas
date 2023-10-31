@@ -26,15 +26,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
-  /* background-color: lightcoral; */
 }
 
 .register__contain {
   width: 35vw;
   height: 100vh;
 
-  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,25 +41,23 @@ body {
 }
 
 .register__contain img {
-  width: 18vw;
+  min-width: 18vw;
   height: 40vh;
   margin: 10px;
-  /* background-color: yellow; */
 }
 
 .register__contain--datos {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #d8f3a0; */
-  width: 32vw;
-  height: 8vh;
+  width: 400px;
+  height: 40px;
 }
 
 .register__contain--datos input {
   background-color: #dee2e6;
   width: 168px;
-  height: 30px;
+  height: 35px;
   border-radius: 10px;
   padding: 12px;
   margin: 7px;
@@ -73,7 +68,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: chocolate; */
   width: 32vw;
   height: 35vh;
 }
@@ -88,7 +82,6 @@ body {
 }
 
 .register__button {
-  /* background-color: #d8f3a0; */
   width: 32vw;
   height: 50px;
   margin-top: 10px;
@@ -99,7 +92,7 @@ body {
 }
 
 .register__button button {
-  width: 200px;
+  min-width: 200px;
   height: 30px;
   border-radius: 20px;
   cursor: pointer;

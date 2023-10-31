@@ -6,27 +6,33 @@
     <title>Sucuespinas</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="/assets/animaciones.css">
+    <link rel="stylesheet" href="/assets/mediaquerys.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   </head>
   <body>
     <!-- SECCION HEADER -->
     <header>
-      <div>
-        <img
-          class="navbar__logo"
-          src="/assets/images/logo.png"
-          alt="cactus"
+      <div class="navbar__img">
+       <img
+       class="navbar__logo"
+        src="/assets/images/logo.png"
+        alt="cactus"
         />
       </div>
       <nav class="navbar">
-        <div class="navbar">
-          <ul class="navbar__list">
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#productos">Catálogo</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="/assets/login.html">Login</a></li>
-          </ul>
-        </div>
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle">
+
+        <ul class="navbar__list">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#productos">Catálogo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="/assets/login.html">Login</a></li>
+        </ul>
       </nav>
+      
     </header>
     <section id="hero">
       <div class="hero__div">
@@ -43,7 +49,7 @@
           Comodoro Rivadavia, Chubut-Argentina. Desde ese momento nos dedicamos
           al cultivo y asesoramiento profesional en Cactus, Suculentas y Plantas
           Exóticas. Nuestro principal espacio de contacto con clientes se
-          encuentra en el barrio Laprida de la ciudad de Comodoro Rivadavia
+          encuentra en el barrio Laprida de la ciudad de Comodoro Rivadavia.
         </p>
       </div>
       <div class="nosotros__img">
@@ -166,7 +172,7 @@
         </div>
       </div>
       <div class="redes">
-        <span class="redes__parrafo"><p>Seguinos en las redes:</p></span>
+        <span class="redes__parrafo"><p>Seguinos en nuestras redes sociales:</p></span>
         <div class="logos__redes">
           <a href="https://www.instagram.com/sucuespinas" target="_blank"><img src="/assets/images/instagram.png" alt="logo-instagram"></a>
           <a href="https://www.facebook.com/profile.php?id=100063576279341" target="_blank"><img src="/assets/images/facebook.png" alt="logo-facebook"></a>
@@ -179,7 +185,7 @@
 
     <footer id="footer">
       <img src="" alt="">
-      <p>Sucuespinas - 2023</p>
+      <p>© Sucuespinas - 2023</p>
     </footer>
   </body>
 </html>

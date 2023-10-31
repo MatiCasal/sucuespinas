@@ -19,7 +19,7 @@
 }
 
 .login__contain {
-  width: 25vw;
+  width: 30vw;
   height: 80vh;
   /* background-color: aqua; */
   display: flex;
@@ -31,7 +31,7 @@
 }
 
 .login__contain img {
-  width: 18vw;
+  min-width: 18vw;
   height: 40vh;
   margin: 10px;
   /* background-color: yellow; */
@@ -73,6 +73,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .login__button--enlace {
