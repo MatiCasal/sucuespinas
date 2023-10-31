@@ -131,7 +131,7 @@ body {
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   padding: 20px;
 }
@@ -251,7 +251,7 @@ body {
   align-items: center;
   padding: 10px 0;
   margin-bottom: 1rem;
-  box-shadow: 7px 9px 5px 5px rgba(0, 0, 0, 0.13);
+  box-shadow: 8px 9px 5px 5px rgba(0, 0, 0, 0.13);
 }
 
 .articulos__card img {
